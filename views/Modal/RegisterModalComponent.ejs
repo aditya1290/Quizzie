@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/LoginModals/RegisterModal.css">
+
+<div class="ui modal RegisterModal">
+    <i class="close icon"></i>
+    <div class="header">
+        <h1>Register</h1>
+    </div>
+
+    <div class="ui floating message hidden error" id="RegisterMessage1">
+        <p>Minimum 8 characters...</p>
+      </div>
+      <div class="ui floating message hidden error" id="RegisterMessage2">
+        <p>Email already exists. Try login</p>
+      </div>
+
+    <div>
+        <div class="d-flex align-items-center">
+            <div class="SideArea1">
+                <form method="POST" action="/auth/register" id="RegisterFormID">
+                    <div class="LabelText">Name</div>
+                    <br>
+                    <div class="ui input focus w-100">
+                        <input type="text" placeholder="Aditya" name="Name" onclick="removeRegisterError()">
+                    </div>
+
+                    <div class="LabelText mt-4 pt-2">Email</div>
+                    <br>
+                    <div class="ui input focus w-100">
+                        <input type="email" placeholder="abc@xy.z" name="Email" id="RegisterEmailInputField" onclick="removeRegisterError()">
+                    </div>
+
+                    <div class="LabelText mt-4 pt-2">Password</div>
+                    <br>
+                    <div class="ui input focus w-100">
+                        <input type="password" name="Password" placeholder="Minimum 8 characters.." id="RegisterPasswordInputField" onclick="removeRegisterError()">
+                    </div>
+
+                    <div class="mt-4 pt-2">
+                        <button type="submit" class="ui green button">Enter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

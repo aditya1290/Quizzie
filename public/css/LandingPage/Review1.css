@@ -1,0 +1,47 @@
+.Review1{
+    max-width: 1200px;
+    margin:6rem 0;
+
+}
+
+.ReviewHead .desc1Headline{
+    margin-bottom: 4rem;
+}
+
+.ReviewCardItem{
+    width:45%;
+    padding:2rem;
+    margin:1rem;
+    box-shadow: 0 1px  10px #9C2CC0;
+    background-color: white;
+}
+
+
+.ReviewCardMain{
+    width: 86%!important;
+}
+
+.ReviewCardItem .Title{
+    width: 70%;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.ReviewCardItem .Description{
+    text-align: justify;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media screen and (max-width:800px){
+    .ReviewCardItem{
+        width: 100%;
+        overflow: hidden;
+    }
+}

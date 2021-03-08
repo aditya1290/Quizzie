@@ -1,0 +1,116 @@
+#navbar{
+    background-color: transparent;
+    transition: all 0.2s ease-out 0.05s;
+    transition: padding 0.2s ease-out,color 0.2s ease-out;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index : 1;
+}
+
+.scroll0{
+    padding: 2rem 1rem;
+    background-color: rgb(234 167 167) !important;
+    /* color: white; */
+}
+.scroll1{
+    padding:1rem 1rem;
+    background-color: white !important;
+    color:black;
+
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+
+}
+
+.navbar{
+    max-width: 1200px;
+    margin:auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Navbar brand  */
+.navbar-brand{
+    font-size: 2rem;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    
+    color:black;
+}
+
+.navbar-toggler{
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+#navbarSupportedContent{
+    width: 75%;
+}
+ul li{
+    margin:0 2rem;
+}
+ul li a{
+    color: black;
+}
+
+.navbar-collapse ul li a{
+    color: inherit;
+    padding:1rem 0;
+ }
+
+
+.ui.dropdown .menu {
+    min-width: 150px;
+}
+
+/* For correctness of semantic ui modal starts */
+.dimmed.dimmable > .ui.animating.dimmer, .dimmed.dimmable > .ui.visible.dimmer, .ui.active.dimmer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui.modal,.ui.active.modal {
+    margin: 0 auto!important;
+    top: auto !important;
+    left: auto !important;
+    transform-origin: center !important;
+    transition: all ease .5s;
+    height: fit-content;
+}
+
+/* For correctness of semantic ui modal Ended */
+
+@media screen and (max-width:770px){
+
+
+    .navbar{
+        text-align: inherit;
+    }
+
+    .navbar-collapse{
+        margin-top: 2rem;
+    }
+    .navbar-collapse div ul{
+        flex-direction: column;
+        align-items: inherit !important;
+    }
+    .navbar-collapse div ul li{
+        margin: 1rem 2rem;
+    }
+    .navbar-collapse .temp1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 12.5%;
+    }
+
+    .navbar-collapse .temp1 button{
+        margin: 1rem 2rem;
+        padding: 0.7rem 1.5rem;
+    }
+}

@@ -1,0 +1,50 @@
+#parallax{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/resources/LP12.jpg');
+    background-size: 100% 100%;
+    /* background-position: cover; */
+    background-attachment: fixed;
+    z-index: -1;
+    position: inherit;
+    top:0;
+    left:0;
+}
+
+#parallaxTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color:rgb(214, 150, 150);
+    background-attachment: fixed;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#parallaxTitle p{
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: black;
+    word-spacing: 20px;
+}
+
+@media screen and (max-width:1127px){
+    #parallaxTitle{
+        font-size: 2.5rem !important;
+    }
+}
+@media screen and (max-width:800px){
+    #parallaxTitle{
+        font-size: 2rem  !important;
+    }
+}
+@media screen and (max-width:500px){
+    #parallaxTitle{
+        font-size: 1.4rem !important;
+    }
+    #parallaxTitle p{
+        word-spacing: 15px;
+    }
+}

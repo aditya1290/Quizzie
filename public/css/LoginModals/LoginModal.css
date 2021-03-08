@@ -1,0 +1,38 @@
+.SideArea{
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.SideBorder{
+    border-right: 1px solid rgb(173, 173, 173);
+}
+
+.LabelText{
+    font-size: 1.2rem;
+}
+.LeftSide{
+    width: 58%;
+}
+
+.ui.message{
+    margin:0;
+}
+.LoginModal{
+    background-color: rgb(241, 241, 241)  !important;
+}
+.Grow1{
+    flex-grow: 1;
+}
+
+.TransparentButton{
+    border:0;
+    margin-top: 2rem;
+    color: rgb(245, 119, 119);
+}
+.TransparentButton:hover{
+    color: rgb(233, 77, 77);
+}
+button:focus, button:active{
+    outline: none;
+    box-shadow: none;
+}

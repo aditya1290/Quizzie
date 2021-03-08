@@ -1,0 +1,52 @@
+.FeatureTitlehead{
+    margin:4rem auto;
+    max-width: 1200px;
+    /* position: sticky;
+    top:7rem;
+    left:0; */
+}
+
+.FeatureMain{
+    margin-bottom: 10rem;
+}
+
+.featureItem{
+    border-radius: 10px;
+    width: 20rem;
+    padding: 2%;
+    margin: 2% !important;
+    height: 35rem;
+    min-width: 25%;
+    max-width: 100%;
+    /* box-shadow: 0 0 10px rgb(104, 104, 104); */
+}
+.featureItem .desc1Headline{
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    height:4rem;
+}
+
+
+
+.featureItem .Description{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 6%;
+
+}
+
+@media screen and (max-width:1000px){
+
+    .featureItem{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .featureItem{
+        width: 80%;
+    }
+}
